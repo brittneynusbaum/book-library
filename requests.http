@@ -30,5 +30,13 @@ DELETE http://localhost:3000/books/5
 
 
 ######## author requests ########
+
 ### create new author
 POST http://localhost:3000/authors
+content-type: application/json
+
+{
+  "name": "Ruth Ware",
+  "age": 45,
+  "genre": "Psychological crime thriller"
+}
