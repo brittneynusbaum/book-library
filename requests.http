@@ -1,9 +1,10 @@
+### index books
 GET http://localhost:3000/books
 
-### show
-GET http://localhost:3000/books/3
+### show book
+GET http://localhost:3000/books/4
 
-### create
+### create new book
 POST http://localhost:3000/books
 content-type: application/json
 
@@ -15,7 +16,7 @@ content-type: application/json
   "book_image": "Test"
 }
 
-### update
+### update book
 PATCH http://localhost:3000/books/1
 content-type: application/json
 
@@ -23,5 +24,11 @@ content-type: application/json
   "summary": "Imagine a friend you haven’t spoken to in a while invites you to her hen party (bachelorette party). That doesn’t sound so odd. Except add a cabin in the middle of nowhere and that your old friend is marrying your ex-boyfriend. What could go wrong? It’s a mystery/suspense in a house in the middle of the woods, so everything is going to go wrong! And did I mention it starts with a character in the hospital unable to remember what happened?"
 }
 
-### delete
+### delete book
 DELETE http://localhost:3000/books/5
+
+
+
+######## author requests ########
+### create new author
+POST http://localhost:3000/authors
