@@ -13,10 +13,10 @@ class BooksController < ApplicationController
   def create
     book = Book.new(
       title: params[:title],
-      author: params[:author],
       rating_out_of_five: params[:rating_out_of_five],
       summary: params[:summary],
-      book_image: params[:book_image]
+      book_image: params[:book_image],
+      author_id: params[:author_id]
     )
     book.save
     render json: book.as_json
@@ -25,10 +25,10 @@ class BooksController < ApplicationController
   def update
     book = Book.find_by(id: params[:id])
     book.title = params[:title] || book.title
-    book.author = params[:author] || book.author
     book.rating_out_of_five = params[:rating_out_of_five] || book.rating_out_of_five
     book.summary = params[:summary] || book.summary
     book.book_image = params[:book_image] || book.book_image
+    book.author_id = params[:author_id] || book.author_id
     book.save
     render json: book.as_json
   end

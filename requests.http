@@ -10,10 +10,10 @@ content-type: application/json
 
 {
   "title": "Test",
-  "author": "Test",
   "rating_out_of_five": 1,
   "summary": "Test",
-  "book_image": "Test"
+  "book_image": "Test",
+  "author_id": 
 }
 
 ### update book
@@ -21,7 +21,7 @@ PATCH http://localhost:3000/books/1
 content-type: application/json
 
 {
-  "summary": "Imagine a friend you haven’t spoken to in a while invites you to her hen party (bachelorette party). That doesn’t sound so odd. Except add a cabin in the middle of nowhere and that your old friend is marrying your ex-boyfriend. What could go wrong? It’s a mystery/suspense in a house in the middle of the woods, so everything is going to go wrong! And did I mention it starts with a character in the hospital unable to remember what happened?"
+  "author_id": 2
 }
 
 ### delete book
