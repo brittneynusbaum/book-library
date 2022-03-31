@@ -40,3 +40,14 @@ content-type: application/json
   "age": 45,
   "genre": "Psychological crime thriller"
 }
+
+
+######## user requests ########
+
+### create new user (sign up)
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  
+}

@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   delete "/books/:id" => "books#destroy"
 
   post "/authors" => "authors#create"
+
+  post "/users" => "users#create"
+
 end
