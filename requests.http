@@ -49,5 +49,8 @@ POST http://localhost:3000/users
 content-type: application/json
 
 {
-  
+  "name": "Gandalf the Grey",
+  "email": "gandalf@thering.com",
+  "password": "password",
+  "password_confirmation": "password"
 }
