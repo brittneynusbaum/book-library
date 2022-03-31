@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Book.create!([
+  {title: "In a Dark, Dark Wood", rating_out_of_five: 4, summary: "Imagine a friend you haven’t spoken to in a while invites you to her hen party (bachelorette party). That doesn’t sound so odd. Except add a cabin in the middle of nowhere and that your old friend is marrying your ex-boyfriend. What could go wrong? It’s a mystery/suspense in a house in the middle of the woods, so everything is going to go wrong! And did I mention it starts with a character in the hospital unable to remember what happened?", book_image: "https://ext-images.hachettebookgroup.com/9781501112324/190x285", author_id: 2},
+  {title: "The Lying Game", rating_out_of_five: 5, summary: "Here, Ware gives us a past-and-present story centered on a group of boarding school friends, now in their early thirties, who are reunited. Kate needs her three friends–Fatima (a Doctor, mother, wife), Isa (a mother of a six-month-old), and Thea (a casino dealer)–to drop everything and come to her. Why you may ask? Well, someone found a body while walking their dog. Now the women are lying to their families about going back for a reunion dinner when really they’re all trying to reconcile with the past and all their lies...", book_image: "https://ext-images.hachettebookgroup.com/9781501156199/190x285", author_id: 2},
+  {title: "The Woman in Cabin 10", rating_out_of_five: 4, summary: "Lo Blacklock, who writes for a travel magazine, is having a hard time after a break-in at her apartment, so she thinks an assignment on a new luxury cruise will be a good change of scenery. And...it’s not! She swears she sees a woman’s body thrown overboard into the water, but no one else saw it. No one even has a record of a missing passenger. Is everyone on this cruise a suspect like in Clue, or can Lo not trust what she saw?", book_image: "https://ext-images.hachettebookgroup.com/9781501132940/190x285", author_id: 2},
+  {title: "Annihilation", rating_out_of_five: 4, summary: "The book describes a team of four women (a biologist, an anthropologist, a psychologist, and a surveyor) who set out into an area known as Area X. The area is abandoned and cut off from the rest of civilization.[1] They are the 12th expedition; the previous expeditions have been fraught with disappearances, suicides, aggressive cancers, and mental trauma.", book_image: "https://upload.wikimedia.org/wikipedia/en/e/e5/Annihilation_by_jeff_vandermeer.jpg", author_id: 1}
+])
+Author.create!([
+  {name: "Jeff VanderMeer", age: 53, genre: "Speculative fiction, Fantasy, Metafiction, Horror, Science fiction, Weird fiction"},
+  {name: "Ruth Ware", age: 45, genre: "Psychological crime thriller"}
+])
